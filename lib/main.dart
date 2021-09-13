@@ -25,8 +25,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // to get only availabe meal on begin app.
-    Provider.of<MealProvider>(context, listen: true).updateAllMealAvailable();
-    Provider.of<MealProvider>(context, listen: true).upDateFavoriteMeal();
+    Provider.of<MealProvider>(context, listen: false).updateAllMealAvailable();
+    Provider.of<MealProvider>(context, listen: false).upDateFavoriteMeal();
+    Provider.of<MealProvider>(context, listen: false).setFilterValue();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
