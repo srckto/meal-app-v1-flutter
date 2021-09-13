@@ -29,6 +29,17 @@ class MealProvider with ChangeNotifier {
     };
     notifyListeners();
   }
+  
+  Future setFilterValue() async {
+    {
+      SharedPreferences _pref = await SharedPreferences.getInstance();
+      _pref.setBool("isGlutenFree", filters["isGlutenFree"]!);
+      _pref.setBool("isLactoseFree", filters["isLactoseFree"]!);
+      _pref.setBool("isVegan", filters["isVegan"]!);
+      _pref.setBool("isVegetarian", filters["isVegetarian"]!);
+    }
+    notifyListeners();
+  }
 
   // use it when the begin-up app. file : main
   Future updateAllMealAvailable() async {
@@ -123,4 +134,5 @@ class MealProvider with ChangeNotifier {
       iconState = false;
     }
   }
+    notifyListeners();
 }
