@@ -1,0 +1,66 @@
+name: meal_app_v1
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  shared_preferences: ^2.0.7
+
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+
+
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+    # - assets/images/logo_drawer.png
+    # - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+
+  fonts:
+   - family: Raleway
+     fonts:
+       - asset: assets/fonts/Raleway-Black.ttf
+       - asset: assets/fonts/Raleway-Bold.ttf
+       - asset: assets/fonts/Raleway-Regular.ttf
+         #style: Regular
+   - family: RobotoCondensed
+     fonts:
+        - asset: assets/fonts/RobotoCondensed-Bold.ttf
+        - asset: assets/fonts/RobotoCondensed-Italic.ttf
+        - asset: assets/fonts/RobotoCondensed-Regular.ttf
+
+   - family: CherryAndKisses
+     fonts:
+        - asset: assets/fonts/CherryAndKisses.ttf
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
